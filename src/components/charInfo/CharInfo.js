@@ -18,7 +18,7 @@ const CharInfo = (props) => {
 
     // Here is a method of two lifeCycles (didMount and didUpdate)
     useEffect(() => {
-        updateChar();
+        updateChar()
      }, [props.charId])
 
 
@@ -65,7 +65,7 @@ const View = ({char}) => {
     return (
         <>
             <div className="char__basics">
-                <img src={thumbnail} alt="{name}" style={imgStyle}/>
+                <img src={thumbnail} alt={name} style={imgStyle}/>
                 <div>
                     <div className="char__info-name">{name}</div>
                     <div className="char__btns">
@@ -79,7 +79,6 @@ const View = ({char}) => {
                 </div>
             </div>
             <div className="char__descr">
-
                 {description}
             </div>
             <div className="char__comics">Comics:</div>
